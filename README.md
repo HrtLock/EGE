@@ -57,7 +57,7 @@ for a in range(1, 1000):
     if fl:
         print(a)
 ```
-> output - 1 2 3 4 5 6 7 8 9 10 (11)
+> output - 1 2 3 4 5 6 7 8 9 10 (11)<br/>
 > Ответ: 10
 
 [Больше примеров](https://github.com/DazzS/ege/blob/main/15.md "Примеры задания 15")
