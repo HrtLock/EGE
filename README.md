@@ -15,7 +15,7 @@
  &nbsp; &nbsp; КОНЕЦ ПОКА<br/>
 КОНЕЦ<br/>
 
-```
+```python
 x = '1'*84
 while '11111' in x:
     x = x.replace('222', '1',1)
