@@ -40,5 +40,28 @@ print(x)
 --------------------------------------------------
 
 ## <a name="num15"></a> Задание 15
-![Задание 15. Законы алгебры логики](https://user-images.githubusercontent.com/49374948/121887595-986ea380-cd1f-11eb-8d0c-3bd66523003e.png)
+Для какого наибольшего целого неотрицательного числа A выражение
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;(2x + 3y < 30) ∨ (x + y ≥ A)
+тождественно истинно при любых целых неотрицательных x и y?
 
+```python
+for a in range(1, 1000):
+    fl = True
+    for x in range(1,1000):
+        for y in range(1,1000):
+            if not(((2*x + 3*y) < 30) or ((x + y) >= a)):
+                fl = False
+                break #Если x и y не подходят, то выходим из цикла
+        if fl == False:
+            break
+    if fl:
+        print(a)
+```
+> output - 1 2 3 4 5 6 7 8 9 10 (11)
+> Ответ: 10
+
+[Больше примеров](https://github.com/DazzS/ege/blob/main/15.md "Примеры задания 15")
+
+[Задание 15. Законы алгебры логики](https://user-images.githubusercontent.com/49374948/121887595-986ea380-cd1f-11eb-8d0c-3bd66523003e.png)
+
+--------------------------------------------------
