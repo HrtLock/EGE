@@ -76,10 +76,8 @@ for a in range(1, 1000):
 
 ## <a name="num1921"></a> Задание 19-21 - Теория игр
 
+### №19
 ```python
-
-# №19
-
 def f(x, y, p):
     if x + y >= 84 and p == 3: # Выигрыш на 3-ем ходу игры
         return True
@@ -93,10 +91,10 @@ for i in range(1, 67 + 1):
     if f(16, i, 1):
         print(i)
         break
-        
+```
 
-# №20
-
+### №20
+```python
 def f(x, y, p):
     if x + y >= 84 and p == 4: # Выигрыш на 4-ом ходу игры
         return True
@@ -118,8 +116,10 @@ for i in range(1, 67 + 1):
         print(i)
 
 
-# №21
+```
 
+### №21
+```python
 def f(x, y, p):
     if x + y >= 84 and (p == 3 or p == 5): # может выиграть на 3 или 5 ходу
         return True
