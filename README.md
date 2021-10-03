@@ -138,7 +138,7 @@ number = 0
 
 for i in range(0, len(nums)):
     for j in range(number, len(nums)):
-        if nums[i]*nums[j]%34!=0 and nums[i] != nums[j]:
+        if nums[i]*nums[j]%34!=0 and i != j:
             count+=1
             if nums[i]+nums[j] > max:
                 max = nums[i]+nums[j]
