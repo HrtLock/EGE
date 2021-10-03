@@ -111,13 +111,14 @@ for a in range(1, 1000):
 ```python
 with open('17.txt', 'r') as f: # берем файл
     nums = f.read().splitlines() # заносим строки в массив (одна стрка = 1 элемент)
+nums = [int(item) for item in nums]
 count = 0
 max = -20000
 for i in range(0, len(nums)-1):
-    if int(nums[i])%3==0 or int(nums[i+1])%3==0:
+    if nums[i]%3==0 or nums[i+1]%3==0:
         count+=1
-        if int(nums[i]) + int(nums[i+1]) > max:
-            max = int(nums[i]) + int(nums[i+1])
+        if nums[i] + inums[i+1] > max:
+            max = nums[i] + inums[i+1]
 print(count, max)
 ```
 --------------------------------------------------
