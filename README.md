@@ -114,11 +114,11 @@ with open('17.txt', 'r') as f: # берем файл
 nums = [int(item) for item in nums]
 count = 0
 max = -20000
-for i in range(0, len(nums)):
+for i in range(0, len(nums)-1):
     if nums[i]%3==0 or nums[i+1]%3==0:
         count+=1
-        if nums[i] + inums[i+1] > max:
-            max = nums[i] + inums[i+1]
+        if nums[i] + nums[i+1] > max:
+            max = nums[i] + nums[i+1]
 print(count, max)
 ```
 
