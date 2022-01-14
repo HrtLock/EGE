@@ -414,7 +414,7 @@ for i in range (10000000, 1000000000):
     if len(st) != 0:
         m = st[0] + st[1]
         if m < 10000:
-            print(i)
+            print(m)
             cnt+=1
         if cnt == 5:
             break
