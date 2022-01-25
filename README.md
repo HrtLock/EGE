@@ -321,7 +321,7 @@ a = list(map(str, f.read().split()))[0]
 max = 0
 c = 0
 for i in a:
-    if i == 'C' :
+    if i == 'A' or i == 'B' or i == 'E' or i == 'F' :
         c += 1
         if c > max:
             max = c
