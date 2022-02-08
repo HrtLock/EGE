@@ -384,8 +384,6 @@ def deli(n):
             if d != n // d:
                 sp.append(n // d)
         d += 1
-```
-```python
     return sorted(sp)[:5] //возвращает первые 5 минимальных делителей
 ```
 
