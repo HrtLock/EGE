@@ -386,7 +386,17 @@ def deli(n):
         d += 1
     return sorted(sp)[:5] #возвращает первые 5 минимальных делителей
 ```
-
+или
+```python
+def deli(n):
+    d = 1
+    sp = []
+    for i in range(d, n//2+1):
+        if n%i==0:
+            sp.append(n)
+    sp.append(n)
+    return sorted(sp)
+```
 **Проверка на простое число**
 ```python
 def isPrime(a):
